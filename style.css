@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredericka+the+Great&family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(bgimage.jpg);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#title {
+    padding: 20px;
+    background-color: #1b0202af;
+    text-align: center;
+    color: #EF3B36;
+    font-weight: bold;
+    font-family: 'Rowdies', cursive;
+    font-size: 22.5px;
+    border-bottom: 10px solid #FFF;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+header#title span {
+    color: #FFFFFF;
+}
+
+article {
+    background-color: #1b0202af;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    border: 10px solid #EF3B36AF;
+    color: #FFFFFF;
+    font-family: Ubuntu;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article #photo {
+    display: inline-flex;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-image: url(Sukarno.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 10px solid #1b0202;
+}
+article #name {
+    background-color: #1b0202af;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    border-left: 10px solid #1b0202;
+    font-family: 'Rowdies', cursive;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+article #text {
+    width: 90%;
+    display: inline-block;
+    padding: 20px;
+    background-color: #EF3B368A;
+    border-left: 10px solid #EF3B36;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 27.5px;
+}
+#text .text-id {
+    border-radius: 10px;
+    border-left: 10px solid #EF3B36;
+    padding: 10px 20px;
+    background-color: #EF3B36AF;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.carousel{
+    background: #1b0202af;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel-indicators li, .carousel a{
+    cursor: pointer;
+}
+
+footer {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer #poster{
+    display: inline-flex;
+    height: 200px;
+    width: 700px;
+    background-image: url(HUT_76_Logo_Konfigurasi_Horizontal_FIN-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 800px) {
+    footer #poster{
+        width: 400px;
+        background-image: url(HUT_76_Logo_FIN-01.png);
+    }    
+}
+
+@media only screen and (max-width: 450px) {
+    footer #poster{
+        width: 200px;
+        height: 350px;
+        background-image: url(HUT_76_Logo_Konfigurasi_Vertikal_FIN-01.png);
+    }    
+}
